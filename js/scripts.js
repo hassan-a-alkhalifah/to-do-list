@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   $("form").submit(function(event) {
     event.preventDefault();
 
@@ -7,11 +8,12 @@ $(document).ready(function() {
 
     var newToDo = new ToDo (activity, description);
 
-    $("ol").append("<li><span class='chore'>" + newToDo.activity + "</span></li><div class='hidden'></div>");
+    $("ol").append("<li class='chore'><div class='list-activity'>" + newToDo.activity + "</div><div class='hidden'></div></li>");
+
 
     $(".chore").click(function() {
-      $(".hidden").text(newToDo.summarize());
-      $(".hidden").fadeToggle();
+      $(this).children(".hidden").text(newToDo.description);
+      $(".hidden").toggle();
     });
 
     $("input#activity").val("");
@@ -25,6 +27,6 @@ function ToDo (activity, description) {
   this.description = description;
 }
 
-ToDo.prototype.summarize = function() {
-  return this.description;
-}
+// ToDo.prototype.summarize = function() {
+//   return this.description;
+// }

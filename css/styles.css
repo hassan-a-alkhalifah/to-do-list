@@ -1,12 +1,16 @@
-.hidden {
+.hidden{
   display: none;
 }
 
-.chore {
+.list-activity {
   cursor: pointer;
   color: #0088cc;
 }
 
-.chore:hover {
+.list-activity:hover {
   text-decoration: underline;
+}
+
+.list-activity {
+
 }
