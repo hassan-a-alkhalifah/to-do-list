@@ -1,4 +1,4 @@
-.hidden{
+.hidden {
   display: none;
 }
 
@@ -11,6 +11,32 @@
   text-decoration: underline;
 }
 
-.list-activity {
+.card {
+  padding: 24px;
+  border-radius: 6px;
+  border-style: ridge;
+  border-width: 4px;
 
+}
+
+#display {
+  margin-top: 30px;
+  display: none;
+}
+
+#description-helper {
+  text-align: center;
+  margin-top: 10px;
+}
+
+body {
+  font-family: fantasy;
+}
+label {
+  font-weight: bolder;
+}
+
+cite {
+  float: right;
+  padding-right: 75px;
 }
