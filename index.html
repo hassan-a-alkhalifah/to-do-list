@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>The Internet's Best "To-Do List"-Maker</h2>
+          <cite>Trust us!</cite>
+      </div>
+      <div class="card">
+        <form>
+          <div class="form-group">
+            <label for="activity">Enter an activity:</label>
+            <input type="text" class="form-control" id="activity">
+          </div>
+
+          <div class="form-group">
+            <textarea class="form-control" id="description" rows="3"></textarea>
+            <small id="description-helper" class="form-text text-muted">Feel free to enter a description or summary of the chore.</small>
+          </div>
+          <button class="btn btn-secondary" type="submit" id="submit">Submit</button>
+        </form>
+
+        <div class="card">
+          <ol></ol>
+        </div>
+
+
+
+    </div>
+  </body>
+</html>
